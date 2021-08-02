@@ -10,7 +10,7 @@ import scala.collection.immutable.{ TreeMap, TreeSet }
 import scala.collection.mutable.Builder
 import scala.util.control.NonFatal
 
-/** An ordered one-to-one mapping, where both keys and values are unique. */
+/** An ordered, bidirectional one-to-one mapping, where both keys and values are unique. */
 final class OneToOne[K, V] private (kv: TreeMap[K, V], vk: TreeMap[V, K]) {
 
   /**
