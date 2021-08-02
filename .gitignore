@@ -20,7 +20,6 @@ project/hydra.sbt
 .classpath
 .project
 .worksheet/
-bin/
 .settings/
 
 # OS X
@@ -39,8 +38,14 @@ bin/
 # Mill
 out/
 
-# Bloop/Metals
+# Bloop/Metals/vscode
 .bloop/
 .metals/
-project/metals.sbt
+.vscode/
+metals.sbt
+
+# Transient workspace
 *.worksheet.sc
+
+# bsp
+.bsp/
